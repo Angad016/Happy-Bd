@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aliciaa!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+    <div class="page landing-page" id="landing">
+        <h1>Happy Birthday, Aliciaa! 🎉</h1>
+        <p>Click to see your surprise!</p>
+        <button class="enter-button" onclick="enterMainPage()">Enter</button>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page main-page" id="main">
+        <h1>Happy Birthday, Aliciaa! 🎉</h1>
+
+        <div class="cube-container">
+            <div class="cube" id="cube">
+
+                <div class="face front">
+                    <p>Dear Aliciaa, wishing you a year full of happiness, love and magical moments!</p>
+                </div>
+
+                <div class="face right">
+                    <p>Thank you for being such a wonderful person. May your birthday be full of joy!</p>
+                </div>
+
+                <div class="face left">
+                    <p>You are truly special, Aliciaa. May your year be filled with love and success.</p>
+                </div>
+
+            </div>
+
+            <button class="nav-arrow left" onclick="rotateCube(-120)">&lt;</button>
+            <button class="nav-arrow right" onclick="rotateCube(120)">&gt;</button>
+        </div>
+    </div>
+
+    <!-- Local MP3 Song -->
+    <audio id="birthdaySong" src="Tenu.mp3" loop></audio>
+
+    <!-- Play button -->
+    <button id="playMusicBtn">▶ Play Music</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
